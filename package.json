@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/rudyrant/pixel-project#readme",
   "devDependencies": {
-    "@react-native-community/cli": "latest"
+    "@react-native-community/cli": "latest",
+    "@react-native/metro-config": "^0.84.0"
   },
   "dependencies": {
     "matter-js": "^0.20.0",
