@@ -24,6 +24,7 @@
   "dependencies": {
     "matter-js": "^0.20.0",
     "noisejs": "^2.1.0",
+    "react-native": "latest",
     "react-native-game-engine": "^1.2.0"
   }
 }
