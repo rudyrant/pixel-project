@@ -18,6 +18,9 @@
     "url": "https://github.com/rudyrant/pixel-project/issues"
   },
   "homepage": "https://github.com/rudyrant/pixel-project#readme",
+  "devDependencies": {
+    "@react-native-community/cli": "latest"
+  },
   "dependencies": {
     "matter-js": "^0.20.0",
     "noisejs": "^2.1.0",
