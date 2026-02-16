@@ -11,10 +11,15 @@ export const PlayerControl = (entities: any, { touches, screen }: any) => {
 
     touches.filter((t: any) => t.type === "move").forEach((t: any) => {
         if (t.event.pageX < screen.width / 2) {
-            Matter.Body.translate(player, { x: -2, y: 0 });
+            Matter.Body.applyForce(player, player.position, { x: -0.005, y: 0 });
         } else {
-            Matter.Body.translate(player, { x: 2, y: 0 });
+            Matter.Body.applyForce(player, player.position, { x: 0.005, y: 0 });
         }
+    });
+
+    // Simple jump on press
+    touches.filter((t: any) => t.type === "press").forEach((t: any) => {
+        Matter.Body.applyForce(player, player.position, { x: 0, y: -0.02 });
     });
 
     return entities;
